@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    /* outline: none serve para removermos a borda de foco que aparece quando clicamos em um elemento */
+}
+
+body {
+    background-color: #8C52FD;
+}
+
+/* a diferença de backgroud-color para background é que o primeiro é mais específico, ou seja, tem mais prioridade, já em background, podemos usar outras propriedades como background-image, background-position, background-size, etc. */
+
+.logo {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+main {
+    width: 375px;
+    background: #F4F4F4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+}
+
+/* se colocarmos apenas 1 valor de padding, ele aplica pros 4 lados, se colocarmos 2 valores, o primeiro é para o topo e para baixo, e o segundo é para os lados, se colocarmos 3 valores, o primeiro é par ao topo, o segundo para os lados e o terceiro para baixo, e se colocarmos 4 valores, o primeiro é para o topo, assim por diante, em sentido horário. */
+
+
+label {
+    color: #555555;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select,
+input {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+input {
+    cursor: text;
+    /* a propriedade cursor: text é usado para deixar o cursor em forma de texto, ou seja, a letra I, indicando que o usuário pode digitar algo naquele campo. */
+}
+
+button {
+    background: #772fd3;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    height: 48px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button:hover {
+    /* a pseudo-classe :hover é usada para aplicar estilos a um elemento quando o mouse está sobre ele. */
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+button:active {
+    /* já na pseudo-classe :active, os estilos são aplicados quando o elemento está sendo clicado, quando o mouse pressiona o botão */
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+    /* a propriedade border-radius é usada para arredondar os cantos de um elemento, quanto maior o valor, mais arredondado fica o canto. */
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-img {
+    margin: 15px 0;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currrency-name {
+    color: #777777;
+    font-size: 14px;
+}
+
+.currency-value, .currency-value-to-convert {
+    color: #555555;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-bandeira {
+    width: 44px;
+    height: 44px;
+}
