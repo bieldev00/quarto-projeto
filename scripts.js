@@ -30,7 +30,30 @@ function convertValues() {
     }).format(inputCurrencyValue);
 }
 
+function ChangeCurrency() {
+    const currencyName = document.getElementById('currency-name'); //adicionamos a # para selecionar o id do elemento
+    const currencyImage = document.querySelector('.currency-img'); //selecionamos a imagem para trocar a bandeira de acordo com a moeda selecionada
 
+    if (currencySelect.value == 'dolar') {
+        currencyName.innerHTML = 'Dólar Americano';
+        currencyImage.src = './assets/logo-EUA.png';
+    }
+
+    if (currencySelect.value == 'euro') {
+        currencyName.innerHTML = 'Euro';
+        currencyImage.src = './assets/logo-Euro.png';
+    }
+
+    convertValues()
+}
+
+
+
+
+
+
+
+currencySelect.addEventListener('change', ChangeCurrency)
 convertButton.addEventListener('click', convertValues);
 
 
